@@ -1,0 +1,29 @@
+
+<div class="back">
+
+    <div clas="row">
+     
+        <div class="col-md-6">
+  
+            <div class="card">
+  
+                <div class="text-center">
+  <form class="align" [formGroup]="loginForm" >
+    <label for="inputName" class="form-label"> User Name : </label>
+    <input type="name" id="_username"  formControlName="username" placeholder="Enter name">
+  
+    <br/><span *ngIf="loginForm?.get('username')?.invalid " class="text-danger">Enter a valid input</span><br/>
+  
+    <br/>
+    <label for="inputPassword4" class="form-label">Password : </label>
+    <input type="password" id="_password" formControlName="password"  placeholder="Enter Password">
+  
+    <br/><span *ngIf="loginForm?.get('password')?.invalid " class="text-danger">Enter a Valid password</span>
+  <br>
+    <button [disabled]="loginForm?.invalid"  class="logo" (click)="loginUser()">Login</button>
+  
+  </form>
+  
+  
+  
+  

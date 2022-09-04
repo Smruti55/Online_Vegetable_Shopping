@@ -1,0 +1,92 @@
+<div class="background">
+
+  <div class="container">
+    <div class="card">
+      <form [formGroup]="registerForm" (ngSubmit)="submitRegistration()" class="row ">
+    
+    <div class="col-md-4">
+      <label for="inputname" class="form-label">User name</label>
+      <input type="text" class="form-control" id="userName" formControlName="userName" placeholder="Enter your name">
+      <div class="form-text "  style="color: red;"  *ngIf="f.userName.errors?.['required'] && f.userName.touched ">
+        Name is Required.
+    </div>
+    <div class="form-text" *ngIf="f.userName.errors?.['minlength'] && f.userName.touched ">
+      Name is too short
+  </div>
+  <div class="form" *ngIf="f.userName.errors?.['pattern']&& f.userName.touched">
+    Name Should start with Alphabet
+</div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="col-6">
+      <label for="inputAddress" class="form-label">Mobile number</label>
+        <input type="text" class="form-control" id="input" formControlName="mobile" placeholder="Enter your mobile number">
+        <div class="form-text" *ngIf="f.mobile.errors?.['required'] && f.mobile.touched ">Enter Mobile Number
+        </div>
+        <div class="form-text" *ngIf="f.mobile.errors?.['pattern'] && f.mobile.touched ">Mobile Number Invalid
+        </div>
+        <div class="form-text" *ngIf="f.mobile.errors?.['minlength'] && f.mobile.touched ">Minimum length is 10 digits
+        </div>
+        <div class="form-text" *ngIf="f.mobile.errors?.['maxlength'] && f.mobile.touched ">Max length exceeded</div>
+            
+            
+            
+    </div>
+
+  
+    <div class="col-md-4">
+      <label for="inputPassword" class="form-label">Password</label>
+      <input type="password" class="form-control" id="inputPassword"  formControlName="userPassword" placeholder="Set your password">
+      <div class="form-text" *ngIf="f.userPassword.errors?.['required'] && f.userPassword.touched ">Password Required</div>
+        </div>
+        <div class="form-text" *ngIf="f.userPassword.errors?.['minlength'] || f.userPassword.errors?.['maxlength']  && f.userPassword.touched ">
+            password should be atleast 6 to 12 characters
+        </div>
+<br>
+<br>
+    <!-- <div class="col-6">
+    <label for="inputAddress" class="form-label">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="Enter your address">
+    </div>
+  
+     <div class="col-md-4">
+      <label for="inputCity" class="form-label">City</label>
+       <input type="text" class="form-control" id="inputCity" placeholder="Enter your city">
+   </div>
+    <div class="col-md-4">
+    <label for="inputState" class="form-label">State</label>
+      <select id="inputState" class="form-select">
+        <option selected>Choose your state</option>
+       <option>
+          Telanaga
+        </option>
+        <option>
+          Andhra pradesh
+        </option>
+        <option>
+          Karnataka
+        </option>
+      </select>
+    </div>
+    <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+      <input type="text" class="form-control" id="inputZip" placeholder="Enter pincode">
+    </div>
+     <div class="col-12">
+      <div class="form-check">
+       <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Check me out
+        </label>
+      </div>
+    </div> -->
+  <div class="col-12">
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+  </form>
+</div>
+</div>
+</div>

@@ -1,0 +1,16 @@
+<div class="background">
+<div class="card">
+ <form #userForm = "ngForm" (ngSubmit)="getUserFormData(userForm.value)">
+    <!-- <input type="number" ngModel name="vegid" placeholder="Vegtable Id">
+    <br><br> -->
+    <input type="text" ngModel name="vegetableName" placeholder="Vegtable Name">
+    <br><br>
+    <input type="number" ngModel name="vegetablePrice" placeholder="Vegtable Price">
+    <br><br>
+    <input type="text" ngModel name="vegetableQuantity" placeholder="Vegtable Quantity">
+    <br><br>
+    <button (click)="getInfo()"> ADD </button>
+ </form>
+
+</div>
+</div>

@@ -1,0 +1,36 @@
+
+<header>
+  <div class="container">
+    <img src="../../assets/LOGO.png" alt="Deliver">
+    <a routerLink="/login" class="logo">ONLINE VEGETABLE STORE</a>
+    <!-- <h1>Online_Vegetables_Store</h1> -->
+    <nav>
+      <ul *ngIf="header.visible">
+       
+        <li>
+          <a routerLink="/home-page">Home</a>
+          <a routerLink="/register">Register</a>
+          <a routerLink="/admin">Sign-in</a>
+          <a routerLink="/contact">Contact us</a>
+          <a routerLink="/about">About us</a>
+          <a routerLink="/admin">Sign-out</a>
+
+
+
+        </li>
+      
+        <li>
+          <a routerLink="/cart-page">
+            Cart <span>
+              {{cartQuantity}}
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+ 
+</header>
+
+

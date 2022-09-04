@@ -1,0 +1,39 @@
+
+.head{
+    font-size: large;
+    font-style: oblique;
+    font-weight: bold;
+    position: relative;
+    /* left: 5%; */
+    top: 50px;
+    color:rgb(12, 50, 9)
+}
+.card{
+    
+        height: 40%;
+        width: 60%;
+        position: relative;
+        left: 200px;
+        top: 80px;
+    
+    
+
+}
+.card p{
+    color: rgb(33, 62, 42);
+}
+#background{
+
+    background: url("/assets/aboutbg.jpg");
+    position:absolute;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: white;
+    text-align: center;
+    height: 100%;
+  
+    
+  }

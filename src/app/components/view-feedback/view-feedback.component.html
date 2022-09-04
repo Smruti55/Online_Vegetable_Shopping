@@ -1,0 +1,23 @@
+ <h3>Feedbacks</h3>
+<ul>
+  <li *ngFor = "let user of users">
+
+  </li>
+</ul>
+
+<table class="table">
+  <thead>
+    <tr class="table-light">
+      <th scope="col">FeedbackId</th>
+      <th scope="col">Description</th>
+   
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-success" scope="row"*ngFor="let user of users" >
+      <td>{{user.feedbackId}}</td>
+      <td>{{user.description}}</td>
+    
+    </tr>
+  </tbody>
+</table>

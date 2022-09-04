@@ -1,0 +1,38 @@
+.card{
+
+    margin-top: 12px;
+    width: 589px;
+    padding: 26px;
+    position: absolute;
+    top: 10%;
+    border-radius: 67px;
+    left: 25%;
+    background: transparent;
+       
+}
+
+.background{
+    background: url("/assets/register1.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+    height: 35rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.7; */
+    filter: brightness(0.9);
+} 
+.align{
+    position: relative;
+    right: 38%
+
+}
+.form-text{
+    color: red;
+} 
+
+.btn{
+    position: relative;
+    left:40%;
+    
+}

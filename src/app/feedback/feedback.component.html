@@ -1,0 +1,36 @@
+
+<!-- <div class="background">
+<h1 class="align">Thank you! 
+    Your order is placed.
+</h1>
+<h2>Your feedback is needed</h2>  
+<div class="textarea" class="col-md-5">
+  <label for="exampleFormControlTextarea1" class="form-label"></label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="feedname"></textarea>
+</div>
+<button routerLink="/home" type="button" 
+class="btn btn-outline-success waves-effect btn-sm">Submit</button>
+</div> -->
+  
+<div class="background">
+  <div  class="col-md-5">
+   <form [formGroup]="feedbackForm" (ngSubmit)="submitFeedBack()">
+    <div class="textarea" class="col-md-5">
+      <label for="exampleFormControlTextarea1" class="form-label"></label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" formControlName="description" rows="5" name="feedname"></textarea>
+    </div>
+
+
+      <!-- <input type="number" ngModel name="vegid" placeholder="Vegtable Id">
+      <br><br> -->
+      <!-- <input type="text" ngModel name="vegetableName" placeholder="Vegtable Name">
+      <br><br> -->
+      <!-- <input type="number" ngModel name="vegetablePrice" placeholder="Vegtable Price">
+      <br><br>
+      <input type="text" ngModel name="vegetableQuantity" placeholder="Vegtable Quantity">
+      <br><br> -->
+      <button type="submit"> ADD </button>
+   </form>
+   </div>
+ 
+  </div>
